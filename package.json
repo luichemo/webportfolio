@@ -1,5 +1,5 @@
 {
-  "name": "lukafolio",
+  "name": "webportfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:lukafolio": "node dist/lukafolio/server/server.mjs",
+    "serve:ssr:webportfolio": "node dist/webportfolio/server/server.mjs",
     "e2e": "ng e2e"
   },
   "private": true,
