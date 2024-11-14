@@ -22,15 +22,20 @@ export class NavBarComponent implements OnInit {
     }
   }
 
+  
   ngOnInit() {
     this.onResize();
   }
-
+  setActive(link: string) {
+    this.activeLink = link;
+  }
   toggleMenu() {
     this.showMenu = !this.showMenu;
   }
 
-  isActive(link: string): boolean {
-    return this.activeLink === link;
+
+  scroll(target: any){
+    document.querySelector(`#${target}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    this.setActive(target);
   }
 }

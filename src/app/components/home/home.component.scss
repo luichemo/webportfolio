@@ -1,11 +1,13 @@
 *{
   font-family: "Doto", sans-serif;
 }
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: 95vh;
+  
 }
 .container h1 {
   margin-top: 10vh;
@@ -15,8 +17,8 @@
   font-weight: 700;
 }
 #talkbubble {
-  width: 1500px;
-  height: 80vh;
+  width: 1350px;
+  height: 84vh;
   background-image: linear-gradient(#64b3f4,#c2e59c);
   position: relative;
   z-index: 2;
@@ -126,12 +128,7 @@ h1 {
 }
 
 
-.email {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  transform: rotate(90deg) !important;
-}
+
 
 
 .proj-btn{
@@ -140,26 +137,35 @@ h1 {
   align-items: center;
   margin-top: 12vh;
 }
-.btn {
+.btn{
   
-  font-family: "Sour Gummy", sans-serif !important;
-  padding: 10px 30px ;
   font-size: 30px;
   border-radius: 5px;
-  background-color:#191858 ;
-  color: rgb(211, 211, 10);
-  border: none;
+  background-color: #191858;
+  
+  border: solid 1px #191858;
+  font-weight: 700;
   opacity: 0;
   transform: translateX(-200px); 
   animation: slideUp 0.8s ease-out forwards;
+  width: 200px;
+  height: 70px;
+
 }
 .btn:hover {
-  padding: 15px 35px 15px 35px;
-  transition: 0.5s;
+  background-color: rgb(211, 211, 10);
   cursor: pointer;
-}
 
-@media screen and (max-width:775px) {
+}
+.btn a{
+  padding: 10px 30px ;
+  color: rgb(211, 211, 10);
+}
+.btn a:hover{
+  color: #191858;
+}
+// responsivity
+@media screen and (max-width:1366px) {
   .container h1 {
       margin-top: 0;
       color:#191858;
@@ -168,4 +174,62 @@ h1 {
       font-weight: 500;
   }
 
+}
+@media screen and (max-width:756px) {
+  .container h1 {
+      
+      font-size: 32px;
+      font-weight: 500;
+  }
+
+}
+
+
+
+@media screen and (max-width:450px) {
+  .container h1 {
+    margin-top: 20vh;
+    
+}
+#talkbubble {
+  
+  height: 80vh;
+  
+}
+  .web-links{
+    display: none;
+  }
+
+}
+@media screen and (max-width:375px) {
+  .container h1 {
+    margin-top: 20vh;
+    
+}
+  .btn{
+    display: none;
+  }
+
+}
+
+
+
+
+#about{
+  height: 100vh;
+  border: solid green;
+  max-width: 1350px;
+margin: auto;
+}
+#projects{
+  height: 100vh;
+  border: solid green;
+  max-width: 1350px;
+margin: auto;
+}
+#contact{
+  height: 100vh;
+  border: solid green;
+  max-width: 1350px;
+margin: auto;
 }

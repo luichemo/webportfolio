@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 *{
-    margin: 0;
-    padding: 0;
+    // margin: 0;
+    // padding: 0;
     text-decoration: none;
     font-family: "Sour Gummy", sans-serif;
 
@@ -11,3 +11,6 @@ body{
 background-color:#191858 ;
 
 }
+html{
+    scroll-behavior: smooth;
+  }

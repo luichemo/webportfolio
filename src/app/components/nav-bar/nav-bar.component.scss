@@ -1,12 +1,17 @@
+
 .container{
-    max-width: 1500px;
+    max-width: 1350px;
     margin: auto;
-    padding: 20px;
+    // padding: 20px;
+    height: 5vh;
 }
 .content{
+  background-color: #191858;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // scale: 0.8;
 }
 .logo{
     display: flex;
@@ -70,10 +75,10 @@
 }
 
 .menu ul a.active, .menu ul a:hover {
-    font-family: "Doto", sans-serif;
-    font-size: 40px;
-    color: rgb(211, 211, 10);
-    text-decoration: line-through;
+  font-family: "Doto", sans-serif;
+  font-size: 40px;
+  color: rgb(211, 211, 10);
+  text-decoration: line-through;
 }
 
 
@@ -99,7 +104,7 @@
     
 }
 .wrapper .static-txt{
-    margin-top: 5px;
+    margin-top: 22px;
     color: white;
     font-size: 60px;
     font-weight: 400;
@@ -195,7 +200,9 @@
       flex-direction: column; 
       z-index: 100;
   }
-  
+.wrapper{
+  scale: 0.8;
+}
 
     .menu ul li{
       padding: 20px;
