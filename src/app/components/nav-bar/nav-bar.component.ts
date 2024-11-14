@@ -14,7 +14,7 @@ export class NavBarComponent implements OnInit {
 
   activeLink: string = 'home';
   showMenu: boolean = true;
-
+  showMenu2: boolean = false;
   @HostListener('window:resize', [])
   onResize() {
     if (isPlatformBrowser(this.platformId)) {
@@ -28,14 +28,18 @@ export class NavBarComponent implements OnInit {
   }
   setActive(link: string) {
     this.activeLink = link;
+  
+    
+    
   }
   toggleMenu() {
     this.showMenu = !this.showMenu;
+    this.showMenu2 = !this.showMenu2;
   }
 
 
   scroll(target: any){
-    document.querySelector(`#${target}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    document.querySelector(`#${target}`)?.scrollIntoView({ behavior: 'smooth', block:'start'});
     this.setActive(target);
   }
 }
