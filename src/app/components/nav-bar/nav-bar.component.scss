@@ -11,7 +11,6 @@
 }
 .content{
   background-color:#191858;
-  padding-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -243,7 +242,7 @@
     .material-symbols-outlined{
       position: absolute;
       right: 1%;
-      top: 30%;
+      top: 20%;
       display: block;
       color: #3498db;
       font-size: 70px;
@@ -278,6 +277,14 @@
     .wrapper{
         display: none;
     }
-
+    .logo-txt{
+      font-size: 30px;
+      padding: 0;
+    }
+    .material-symbols-outlined{
+      font-size: 40px;
+      top: 30%;
+      
+    }
 
   }
