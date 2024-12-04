@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {faInstagram, faGithub, faFacebook,faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import {faFilePdf} from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @Component({
   selector: 'app-home',
@@ -15,4 +16,5 @@ export class HomeComponent {
   faGithub=faGithub
   faFacebook=faFacebook
   faLinkedin=faLinkedin
+  faFilePdf =faFilePdf
 }

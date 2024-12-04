@@ -181,16 +181,9 @@ h1 {
   }
 
 }
-// @media screen and (max-width:1000px) {
-//   .container h1 {
-//       color:#191858;
-//       text-align: center;
-//       font-size: 32px;
-//       font-weight: 500;
-//   }
 
-// }
 @media screen and (max-width:756px) {
+
   .container h1 {
       
       font-size: 32px;
@@ -203,6 +196,7 @@ h1 {
 
 
 @media screen and (max-width:450px) {
+  
   .container h1 {
     margin-top: 10vh;
     
@@ -234,14 +228,15 @@ h1 {
 
 #talkbubble2 {
   width: 1350px;
-  height: 90vh;
+  height: auto;
   background-image: linear-gradient(#c2e59c, #64b3f4,);
   position: relative;
   z-index: 2;
   // display: grid;
   text-align: center;
-  margin-bottom: 20px;
+
 }
+
 .container2{
   display: flex;
   justify-content: center;
@@ -302,7 +297,6 @@ h1 {
   font-size: 30px;
   border-radius: 5px;
   background-color: rgb(211, 211, 10);
-  
   border: solid 1px #191858;
   font-weight: 700;
   opacity: 0;
@@ -315,6 +309,7 @@ h1 {
 
 }
 .contact-btn p{
+  font-family: "Sour Gummy", sans-serif !important;
   
   text-align: center;
   margin: 0;
@@ -403,7 +398,7 @@ h1 {
   }
   
 }
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1400px) {
   .about-header{
     margin: 0;
   }
@@ -416,14 +411,15 @@ h1 {
   .about-header p{
     width: auto;
   }
-  .contact-btn{
-    height: 30px;
-    width: 100px;
-    margin-bottom: 40px;
-  }
+  // .contact-btn{
+  //   height: 30px;
+  //   width: 100px;
+  //   margin-bottom: 40px;
+  // }
   .contact-btn p{
     margin: auto;
     margin-bottom: 0px;
+    margin-top: 20%;
     
   }
   .container2 p{
@@ -433,12 +429,7 @@ h1 {
   .about-content h2{
     justify-content: center;
   }
-  .skills_icon{
-    img{
 
-      width: 50px;
-    }
-  }
   .about-right-content{
     margin-bottom: 0px;
   }
@@ -451,6 +442,9 @@ h1 {
     margin-top: 50px;
   }
   #talkbubble2{
+    max-width: 400px;
+  }
+  #talkbubble3{
     max-width: 400px;
   }
   #talkbubble{
@@ -496,5 +490,240 @@ h1 {
     margin-bottom: 0;
 
   }
+
+}
+.cv-content {
+  height: 150px;
+  background-color: #0077B5;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center;    /* Centers content vertically */
+  position: relative;     /* Allows child elements to be positioned relative to this container */
+}
+
+.cv-content a {
+  position: relative;      /* Enables positioning of the child elements within this anchor tag */
+  text-decoration: none;   
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.cv-content p,
+.cv-content fa-icon {
+  position: absolute;     
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.cv-content p {
+  font-family: "Sour Gummy", sans-serif !important;
+  font-size: 30px;
+  color: greenyellow;
+  margin: 0;
+  opacity: 1;
+  transform: translateY(0); 
+}
+
+.cv-content fa-icon {
+  font-size: 50px;
+  color: greenyellow;
+  opacity: 0;        
+  transform: translateY(20px); 
+}
+
+.cv-content:hover p {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.cv-content:hover fa-icon {
+  opacity: 1;
+  transform: translateY(0); 
+}
+
+
+
+
+#talkbubble3 {
+  width: 1350px;
+  height: auto;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.project-content {
+  display: block; /* Default for small screens */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+@media (min-width: 1024px) {
+  .project-content {
+    display: flex; /* Flex layout for large screens */
+  }
+}
+
+.proj {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px;
+}
+
+.proj-left-content {
+  text-align: center;
+  flex: 1 1 100%; /* Take full width by default */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 600px; /* Limit image size */
+}
+
+.proj-right-content {
+  text-align: start;
+  flex: 1 1 100%; /* Default: full width */
+}
+
+@media (min-width: 1024px) {
+  .proj-left-content, .proj-right-content {
+    flex: 0 0 45%; /* Take 45% width each on large screens */
+  }
+
+}
+
+
+.project-header {
+  font-family: "Sour Gummy", sans-serif !important;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #191858;
+}
+
+.project-text {
+  font-family: "Sour Gummy", sans-serif !important;
+  margin-bottom: 20px;
+  color: #191858;
+}
+
+.tools_header {
+  font-family: "Sour Gummy", sans-serif !important;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #191858;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for small screens */
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.tools p {
+  font-family: "Sour Gummy", sans-serif !important;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #bdbdbd;
+  border-radius: 5px;
+  text-align: center; /* Center text inside */
+  width: 80px; /* Set a fixed width */
+  height: 30px; /* Set a fixed height */
+  line-height: 30px; /* Center vertically */
+}
+
+
+.project-btn button {
+  padding: 15px 60px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077B5;
+  font-size: 16px;
+  width: auto; /* Default auto width */
+}
+
+.project-btn button a {
+  color: white;
+  font-family: "Sour Gummy", sans-serif !important;
+  font-size: 20px;
+  text-decoration: none;
+}
+.proj-left-content img {
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transitions for transform and shadow */
+}
+
+.proj-left-content img:hover {
+  transform: scale(1.1); /* Smooth scaling */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+/* Media Queries */
+
+@media (max-width: 1400px) {
+  .tools{
+    margin-bottom: 0px;
+}
+}
+
+@media (max-width: 768px) {
+  .proj-right-content {
+    width: 100%; /* Take full width on medium screens */
+  }
+
+  .project-header {
+    font-size: 24px;
+  }
+
+  .project-text {
+    font-size: 14px;
+  }
+
+  .tools_header {
+    font-size: 18px;
+  }
+
+  .tools p {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+
+  .project-btn button {
+    padding: 10px 60px; /* Increase padding for larger button */
+    font-size: 18px; /* Larger font size */
+  }
+
+  .project-btn button a {
+    font-size: 24px; /* Adjust link font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-header {
+    font-size: 20px;
+  }
+
+  .project-text {
+    font-size: 12px;
+  }
+
+  .tools_header {
+    font-size: 16px;
+  }
+
+  .tools p {
+    width: 60px; /* Smaller width for narrower screens */
+    height: 25px; /* Smaller height */
+    font-size: 12px; /* Adjust font size */
+    line-height: 25px; /* Match height for vertical centering */
+  }
+
+
 
 }
