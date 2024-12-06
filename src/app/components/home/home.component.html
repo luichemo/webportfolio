@@ -77,7 +77,7 @@
                         I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. 
                        </p>
                        <div class="proj-btn" style="justify-content: start; margin-top: 20px;">
-                        <button class="btn" ><a href="#projects">Projects</a></button>
+                        <button class="btn" ><a href="#contact">Contact</a></button>
                     </div>
                 </div>
                 <div class="about-right-content">
@@ -132,7 +132,7 @@
                             <p>Java</p>
                          </div>
                          <div class="project-btn">
-                            <button ><a href="https://luichemo.github.io/recipe-finder/">Visit</a></button>
+                            <a href="https://luichemo.github.io/recipe-finder/"><button>Visit</button></a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                         <p>Java</p>
                      </div>
                      <div class="project-btn">
-                        <button ><a href="#projects">Visit</a></button>
+                        <a href="https://luichemo.github.io/recipe-finder/"><button>Visit</button></a>
                     </div>
                 </div>
             </div>
@@ -178,16 +178,95 @@
                     <p>Java</p>
                  </div>
                  <div class="project-btn">
-                    <button ><a href="#projects">Visit</a></button>
+                    <a href="https://luichemo.github.io/recipe-finder/"><button>Visit</button></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+        </div>
     </div>
 </div>
 <div id="contact">
+    <div class="container2">
+        <div id="talkbubble4">
+            <div class="about-header" >
+                <h1>Get In Touch</h1>
+                <hr>
+                <p style="font-family: 'Sour Gummy', sans-serif !important;">Have a sweet project in mind or just want to say hi? Feel free to send me a message by filling the form below and shoot the Send button!</p>
+            </div>
+            <div class="contact-content">
+                <form >
+                    <div class="form-field">
+                        <mat-form-field>
+                            <mat-label>Full name</mat-label>
+                            <input
+                              matInput
+                              placeholder="Luka Chemia"
+                              required
+                            />
+                        </mat-form-field>
+                    </div>
+                    <div class="form-field">
+                    <mat-form-field>
+                        <mat-label>Email</mat-label>
+                        <input
+                          matInput
+                          placeholder="pat@example.com"
+                          [formControl]="email"
+                          (blur)="updateErrorMessage()"
+                          required
+                        />
+                        @if (email.invalid) {
+                          <mat-error>{{errorMessage()}}</mat-error>
+                        }
+                      </mat-form-field>
+                    </div>
+                    <div class="form-field">
+                        <mat-form-field>
+                            <mat-label>Company Name</mat-label>
+                            <input
+                              matInput
+                              placeholder="NASA"
+                              required
+                            />
+                        </mat-form-field>
+                    </div>
+                    <div class="form-field">
+                        <mat-form-field>
+                            <textarea matInput placeholder="Message"></textarea>
+                          </mat-form-field>
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://luichemo.github.io/recipe-finder/"><button>Send</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div id="footer">
+    <div class="container2">
+        <div id="talkbubble5">
+            
+           <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/luichemo/webportfolio" class="githubf footLink"><fa-icon [icon]="faGithub"></fa-icon></a>
+                <a href="https://www.linkedin.com/in/luka-chemia-a0a339236/" class="linkedinf footLink"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+                <a href="https://www.instagram.com/luichemo/profilecard/?igsh=dW1oZGxwdGNjc2Y=" class="instagramf footLink"><fa-icon [icon]="faInstagram"></fa-icon></a>
+                <a href="https://www.facebook.com/lukaa2002?mibextid=LQQJ4d" class="facebookf footLink"><fa-icon [icon]="faFacebook"></fa-icon></a>
+            </div>
+                <hr>
+
+            <div class="scrol"> 
+                <a href="#home" class="rocketf"><fa-icon [icon]="faSpaceAwesome"></fa-icon></a>
+            </div>
+            <hr>
+            <p>© Luka Chemia 2025.</p>
+           </div>
+        </div>
+    </div>
 </div>
 
 

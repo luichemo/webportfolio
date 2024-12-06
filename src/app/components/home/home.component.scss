@@ -1,5 +1,5 @@
 *{
-  font-family: "Doto", sans-serif;
+  // font-family: "Doto", sans-serif;
 }
 html{
   width: 100%;
@@ -447,6 +447,12 @@ h1 {
   #talkbubble3{
     max-width: 400px;
   }
+  #talkbubble4{
+    max-width: 400px;
+  }
+  #talkbubble5{
+    max-width: 400px;
+  }
   #talkbubble{
     max-width: 400px;
   }
@@ -551,7 +557,6 @@ h1 {
   position: relative;
   z-index: 2;
   text-align: center;
-  margin-bottom: 20px;
 }
 .project-content {
   display: block; /* Default for small screens */
@@ -641,18 +646,24 @@ img {
 
 
 .project-btn button {
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+
+  font-family: "Sour Gummy", sans-serif !important;
   padding: 15px 60px;
   border: none;
   border-radius: 5px;
   background-color: #0077B5;
-  font-size: 16px;
   width: auto; /* Default auto width */
+}
+.project-btn button:hover {
+  background-color: #01679e;
+  transition: 0.2s;
 }
 
 .project-btn button a {
-  color: white;
-  font-family: "Sour Gummy", sans-serif !important;
-  font-size: 20px;
+ 
   text-decoration: none;
 }
 .proj-left-content img {
@@ -726,4 +737,190 @@ img {
 
 
 
+}
+
+
+#talkbubble4 {
+  width: 1350px;
+  height: auto;
+  background-image: linear-gradient(#fff, #0077B5,);
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.contact-content{
+  width: 70%;
+  margin: auto;
+  background-color: #191858;  
+  border-radius: 5px;
+  box-shadow: 0 15px 6px -6px black;
+}
+.contact-content form{
+  padding: 40px;
+  margin-bottom: 40px;
+
+}
+::ng-deep.mat-form-field{
+  border: solid  !important;
+}
+::ng-deep.example-container mat-form-field + mat-form-field {
+  margin-left: 8px;
+  color: white;
+
+}
+::ng-deep.mat-mdc-form-field-error{
+
+  color: rgb(170, 3, 3) !important;
+  text-wrap: nowrap;
+}
+.form-field{
+  padding-top: 20px;
+  background-color: #dfdbdb;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: solid 1px;
+  width: auto;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+::ng-deep.mdc-text-field{
+  overflow: visible !important;
+  font-size: 20px;
+  width: 34vw !important;
+}
+::ng-deep.mdc-text-field--filled .mdc-line-ripple{
+  display: none !important;
+
+}
+mat-label{
+  color: #191858;
+}
+.send{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdbdb;
+}
+#footer{
+  padding: 40px;
+}
+
+#talkbubble5 {
+  width: 1350px;
+  height: auto;
+  background-color: #191858;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.footer-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.scrol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.footer-content hr{
+  width: 300px;
+  margin: auto;
+  border: solid 1px #ffffff80;
+}
+.footer-content p{
+  margin: auto;
+  margin-top: 20px;
+  color: white;
+}
+.githubf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #2b3137;
+  color: white;
+}
+.linkedinf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #0077B5;
+  color: white;
+}
+.instagramf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  background-image: linear-gradient(#f9ce34,#ee2a7b,#6228d7 );
+  color: white;
+}
+.facebookf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #1877F2;
+  color: white;
+}
+.rocketf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  opacity: 0; /* Initial opacity */
+  animation: fadeInOut 2s infinite; /* Animation name, duration, and repetition */
+}
+
+.footLink {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.footLink:hover {
+  transform: scale(1.2); /* Slightly increase size on hover */
+  box-shadow: 0px 4px 15px rgba(0, 150, 255, 0.5); /* Add a blue glow */
+}
+
+/* Customize individual link hover effects */
+.githubf:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Black glow */
+}
+
+.linkedinf:hover {
+  box-shadow: 0px 4px 15px rgba(0, 119, 181, 0.5); /* LinkedIn blue */
+}
+
+.instagramf:hover {
+  box-shadow: 0px 4px 15px rgba(193, 53, 132, 0.5); /* Instagram pinkish glow */
+}
+
+.facebookf:hover {
+  box-shadow: 0px 4px 15px rgba(59, 89, 152, 0.5); /* Facebook blue */
+}
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0; /* Fully transparent at start and end */
+  }
+  50% {
+    opacity: 1; /* Fully visible at mid-point */
+  }
 }

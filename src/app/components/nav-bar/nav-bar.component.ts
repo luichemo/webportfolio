@@ -1,6 +1,6 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Component, HostListener, Inject, OnInit, PLATFORM_ID } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-  constructor(@Inject(PLATFORM_ID) private platformId: any) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: any, private router: Router) {}
 
   activeLink: string = 'home';
   showMenu: boolean = true;
@@ -32,6 +32,7 @@ export class NavBarComponent implements OnInit {
     
     
   }
+
   toggleMenu() {
     this.showMenu = !this.showMenu;
     this.showMenu2 = !this.showMenu2;
