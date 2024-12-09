@@ -333,6 +333,8 @@ h1 {
 .skills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 6rem;
 }
 .img-responsive{
@@ -377,6 +379,7 @@ h1 {
   .about-content p{
     font-weight: 500;
     font-size: 20px;
+    
   }
   .contact-btn p{
     font-size: 22px;
@@ -434,6 +437,13 @@ h1 {
   }
 }
 @media screen and (max-width:550px) {
+  .about-content p{
+    text-align: center;
+  }
+  .proj-btn{
+    margin-top: 50px !important;
+    justify-content: center !important;
+  }
   .container2 h1{
     font-size: 30px;
   }
@@ -503,7 +513,7 @@ h1 {
   .container2 h1{
     font-size: 30px;
   }
-
+  
   #talkbubble2{
     max-width: 320px;
   }
@@ -757,7 +767,6 @@ img {
     font-size: 12px; /* Adjust font size */
     line-height: 25px; /* Match height for vertical centering */
   }
-
 
 
 }

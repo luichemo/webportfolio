@@ -4,4 +4,11 @@
     // z-index: 1000; /* Keeps the navbar above other content */
     height: 120px;
   }
+
+  @media screen and (max-width:775px) {
+    .nav {
+      
+      height: 80px !important;
+    }
+  }
   

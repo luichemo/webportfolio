@@ -9,6 +9,9 @@
     z-index: 1000; /* Keeps the navbar above other content */
     height: 100px;
 }
+.responsive-text{
+  display: none;
+}
 .content{
   background-color:#191858;
     display: flex;
@@ -216,7 +219,7 @@
     .menu ul {
       display: flex;
       position: absolute;
-      margin-top: 50vh;
+      margin-top: 35vh;
       top: 0;
       right: 0;
       left: 0;
@@ -276,14 +279,27 @@
     .wrapper{
         display: none;
     }
+    .responsive-text{
+      display: block;
+    }
     .logo-txt{
-      font-size: 30px;
-      padding: 0;
+      display: none;
     }
     .material-symbols-outlined{
       font-size: 40px;
-      top: 30%;
+      top: 20%;
       
+    }
+    .responsive-text{
+      font-size: 25px;
+      color: rgb(211, 211, 10);
+      padding: 15px;
+    }
+    .content{
+      height: 80px !important;
+    }
+    .container{
+      height: 80px !important;
     }
 
   }
