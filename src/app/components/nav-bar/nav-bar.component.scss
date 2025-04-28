@@ -82,9 +82,10 @@
 
 .menu ul a.active, .menu ul a:hover {
   font-family: "Doto", sans-serif;
-  font-size: 40px;
+  // font-size: 40px;
   color: rgb(211, 211, 10);
   text-decoration: line-through;
+  transition: 0.5s;
 }
 
 

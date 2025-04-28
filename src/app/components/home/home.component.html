@@ -134,7 +134,7 @@
             <div class="about-header">
                 <h1>Projects</h1>
                 <hr>
-                <p style="font-family: 'Sour Gummy', sans-serif !important;">Here you will find some of the personal and
+                <p style="font-family: 'Sour Gummy', sans-serif !important;">Here you will find some of the personal
                     projects on that i worked with their source code and live link.</p>
             </div>
             <div class="project-content">
@@ -241,39 +241,45 @@
                     to say hi? Feel free to send me a message by filling the form below and shoot the Send button!</p>
             </div>
             <div class="contact-content">
-                <form>
-                    <div class="form-field">
-                        <mat-form-field>
-                            <mat-label>Full name</mat-label>
-                            <input matInput placeholder="Luka Chemia" required />
-                        </mat-form-field>
-                    </div>
-                    <div class="form-field">
-                        <mat-form-field>
-                            <mat-label>Email</mat-label>
-                            <input matInput placeholder="pat@example.com" [formControl]="email"
-                                (blur)="updateErrorMessage()" required />
-                            @if (email.invalid) {
-                            <mat-error>{{errorMessage()}}</mat-error>
-                            }
-                        </mat-form-field>
-                    </div>
-                    <div class="form-field">
-                        <mat-form-field>
-                            <mat-label>Company Name</mat-label>
-                            <input matInput placeholder="NASA" required />
-                        </mat-form-field>
-                    </div>
-                    <div class="form-field">
-                        <mat-form-field>
-                            <textarea matInput placeholder="Message"></textarea>
-                        </mat-form-field>
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://luichemo.github.io/recipe-finder/"><button>Send</button></a>
-                    </div>
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                  <div class="form-field">
+                    <mat-form-field appearance="fill">
+                      <mat-label>Full name</mat-label>
+                      <input matInput formControlName="fullName" required  style="margin-top: 5px;"/>
+                    </mat-form-field>
+                  </div>
+              
+                  <div class="form-field">
+                    <mat-form-field appearance="fill">
+                      <mat-label>Email</mat-label>
+                      <input matInput placeholder="pat@example.com" formControlName="email" (blur)="updateErrorMessage()" required  style="margin-top: 5px;"/>
+                      <mat-error *ngIf="email.invalid && (email.dirty || email.touched)">
+                        {{ errorMessage() }}
+                      </mat-error>
+                    </mat-form-field>
+                  </div>
+              
+                  <div class="form-field">
+                    <mat-form-field appearance="fill">
+                      <mat-label>Company Name</mat-label>
+                      <input matInput  formControlName="companyName" required style="margin-top: 5px;" />
+                    </mat-form-field>
+                  </div>
+              
+                  <div class="form-field">
+                    <mat-form-field appearance="fill">
+                      <mat-label>Message</mat-label>
+                      <textarea matInput formControlName="message" style="margin-top: 35px;"></textarea>
+                    </mat-form-field>
+                  </div>
+              
+                  <div class="project-btn">
+                    <button type="submit" [disabled]="contactForm.invalid">Send</button>
+                  </div>
                 </form>
-            </div>
+              </div>
+              
+              
         </div>
     </div>
 </div>
