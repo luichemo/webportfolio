@@ -80,18 +80,12 @@
             <div class="about-content">
                 <div class="about-left-content">
                     <h2>Get To Know Me !</h2>
-                    <p>Hello! I'm Luka, a dedicated IT professional with a strong background in frontend development.
-                        Over the past five years, I've immersed myself in web design, completing comprehensive courses
-                        and gaining practical experience. I excel in design thinking, wireframe creation, and coding. My
-                        technical skills include HTML5, CSS3, SCSS, JavaScript, TypeScript, Angular and other. I
-                        utilize tools like Figma, Adobe Illustrator, Photoshop, and more. I actively contribute to
-                        projects as a volunteer, applying my knowledge and making a positive impact. I'm committed to
-                        continuous learning, staying updated with industry trends.Curiosity and a growth mindset drive
-                        me to find solutions to any challenge. In my free time, I indulge in music, singing, and playing
-                        guitar and piano. My ultimate goal is to become a full-stack developer and establish my own
-                        organization. I envision leading a team on innovative projects that make a meaningful impact.
-                        I'm excited to contribute my skills and dedication to your organization. Let's connect and
-                        create exceptional digital experiences together.
+                    <p>2 Year Experienced Front-End Engineer with expertise in Angular, TypeScript, and building
+                        user-focused, scalable, data-driven applications. Worked on 10 admin-side and 3 client-side
+                        applications for Aldagi and its subsidiary companies, improving and creating new UIs using
+                        Angular Material, Bootstrap, and Tailwind. Also responsible for fixing bugs, creating entirely
+                        new projects, and deploying them to production. Committed to building intuitive data
+                        visualizations that enhance decision-making for large-scale clients.
                     </p>
                     <div class="proj-btn" style="justify-content: start; margin-top: 20px;">
                         <button class="btn"><a href="#contact">Contact</a></button>
@@ -143,9 +137,10 @@
                     <div class="proj-right-content">
                         <div>
                             <div class="project-header">Recipe Finder</div>
-                            <div class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-                                error illo ipsa repellat pariatur iure, sunt veritatis ab nesciunt aperiam temporibus
-                                distinctio ipsum a neque.</div>
+                            <div class="project-text">A responsive web application that allows users to search for
+                                recipes based on ingredients or keywords. It fetches data from a public recipe API and
+                                displays recipe details, including ingredients, preparation steps, and images. Designed
+                                with a clean UI and optimized for both desktop and mobile devices.</div>
                             <p class="tools_header">Tools</p>
                             <div class="tools">
                                 <p>React</p>
@@ -167,9 +162,10 @@
                     <div class="proj-right-content">
                         <div>
                             <div class="project-header">Memory Game</div>
-                            <div class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-                                error illo ipsa repellat pariatur iure, sunt veritatis ab nesciunt aperiam temporibus
-                                distinctio ipsum a neque.</div>
+                            <div class="project-text">A classic card-matching game built to enhance memory skills and
+                                concentration. Players flip cards to find matching pairs, with the game tracking the
+                                number of moves and time taken. Designed with smooth animations and responsive layout
+                                for an engaging user experience.</div>
                             <p class="tools_header">Tools</p>
                             <div class="tools">
                                 <p>JavaScript</p>
@@ -189,15 +185,16 @@
                     <div class="proj-right-content">
                         <div>
                             <div class="project-header">Password Generator</div>
-                            <div class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-                                error illo ipsa repellat pariatur iure, sunt veritatis ab nesciunt aperiam temporibus
-                                distinctio ipsum a neque.</div>
+                            <div class="project-text">A lightweight tool that generates secure, random passwords based
+                                on user-selected criteria such as length, uppercase/lowercase letters, numbers, and
+                                special characters. Built with a focus on usability and responsive design for quick
+                                password creation on any device.</div>
                             <p class="tools_header">Tools</p>
                             <div class="tools">
                                 <p>JavaScript</p>
                                 <p>CSS</p>
                                 <p>Html</p>
-                                
+
                             </div>
                             <div class="project-btn">
                                 <a href="https://luka123luka.pythonanywhere.com/password"><button>Visit</button></a>
@@ -212,9 +209,10 @@
                     <div class="proj-right-content">
                         <div>
                             <div class="project-header">Snake Game</div>
-                            <div class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-                                error illo ipsa repellat pariatur iure, sunt veritatis ab nesciunt aperiam temporibus
-                                distinctio ipsum a neque.</div>
+                            <div class="project-text">An interactive browser-based version of the classic Snake game.
+                                Players control a growing snake to collect food while avoiding collisions with walls and
+                                their own tail. Designed with smooth controls, score tracking, and responsive layout for
+                                a seamless gaming experience.</div>
                             <p class="tools_header">Tools</p>
                             <div class="tools">
                                 <p>JavaScript</p>
@@ -234,9 +232,10 @@
                     <div class="proj-right-content">
                         <div>
                             <div class="project-header">Flowers</div>
-                            <div class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-                                error illo ipsa repellat pariatur iure, sunt veritatis ab nesciunt aperiam temporibus
-                                distinctio ipsum a neque.</div>
+                            <div class="project-text">A creative front-end animation project that visually simulates
+                                blooming flowers using CSS and JavaScript. Focused on smooth transitions, timing, and
+                                visual appeal to demonstrate animation techniques and browser rendering performance.
+                            </div>
                             <p class="tools_header">Tools</p>
                             <div class="tools">
                                 <p>JavaScript</p>
@@ -264,44 +263,45 @@
             </div>
             <div class="contact-content">
                 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-                  <div class="form-field">
-                    <mat-form-field appearance="fill">
-                      <mat-label>Full name</mat-label>
-                      <input matInput formControlName="fullName" required  style="margin-top: 5px;"/>
-                    </mat-form-field>
-                  </div>
-              
-                  <div class="form-field">
-                    <mat-form-field appearance="fill">
-                      <mat-label>Email</mat-label>
-                      <input matInput placeholder="pat@example.com" formControlName="email" (blur)="updateErrorMessage()" required  style="margin-top: 5px;"/>
-                      <mat-error *ngIf="email.invalid && (email.dirty || email.touched)">
-                        {{ errorMessage() }}
-                      </mat-error>
-                    </mat-form-field>
-                  </div>
-              
-                  <div class="form-field">
-                    <mat-form-field appearance="fill">
-                      <mat-label>Company Name</mat-label>
-                      <input matInput  formControlName="companyName" required style="margin-top: 5px;" />
-                    </mat-form-field>
-                  </div>
-              
-                  <div class="form-field">
-                    <mat-form-field appearance="fill">
-                      <mat-label>Message</mat-label>
-                      <textarea matInput formControlName="message" style="margin-top: 35px;"></textarea>
-                    </mat-form-field>
-                  </div>
-              
-                  <div class="project-btn">
-                    <button type="submit" [disabled]="contactForm.invalid">Send</button>
-                  </div>
+                    <div class="form-field">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Full name</mat-label>
+                            <input matInput formControlName="fullName" required style="margin-top: 5px;" />
+                        </mat-form-field>
+                    </div>
+
+                    <div class="form-field">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Email</mat-label>
+                            <input matInput placeholder="pat@example.com" formControlName="email"
+                                (blur)="updateErrorMessage()" required style="margin-top: 5px;" />
+                            <mat-error *ngIf="email.invalid && (email.dirty || email.touched)">
+                                {{ errorMessage() }}
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="form-field">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Company Name</mat-label>
+                            <input matInput formControlName="companyName" required style="margin-top: 5px;" />
+                        </mat-form-field>
+                    </div>
+
+                    <div class="form-field">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Message</mat-label>
+                            <textarea matInput formControlName="message" style="margin-top: 35px;"></textarea>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="project-btn">
+                        <button type="submit" [disabled]="contactForm.invalid">Send</button>
+                    </div>
                 </form>
-              </div>
-              
-              
+            </div>
+
+
         </div>
     </div>
 </div>
